@@ -12,7 +12,7 @@ client = genai.Client(api_key=api_key)
 # Send a prompt to Gemini
 response = client.models.generate_content(
     model="gemini-3-flash-preview", 
-    contents="Hello World from my Day 1 chatbot!"
+    contents="In one or two sentences, how does an AI Engineer differ from a Software Engineer?"
 )
 
 print(response.text)
